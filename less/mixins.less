@@ -1,1 +1,40 @@
 // Mixins in here
+.displayflex(@direction:row, @justify:center, @align:center){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.navstyle(@decoration:none,){
+    text-decoration: @decoration;
+    color: @shark;
+}
+
+.borderbottom(){
+    border-bottom: 2px;
+    border-style: dashed;
+    border-color: @navigation-border;
+}
+
+.bottomspacing(){
+    padding-bottom: 2vh;
+}
+
+.btnmixin(@backgroundcolor, @color, @width, @height){
+        background-color:@button-bg; 
+        color: @white;
+        width:@width;
+        height: @height;
+        border: 1px solid @button-bg;
+        border-radius:10px;
+}
+
+
+@phone: ~"(max-width: 500px)";
+
+.phonewidth{
+    width: 100vw;
+    padding: 0 5vw 0 5vw;
+}
+
