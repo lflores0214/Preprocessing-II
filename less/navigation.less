@@ -1,1 +1,36 @@
 // Navigation Styles here
+
+header{
+    .displayflex(row, space-around, center);
+    .borderbottom();
+    padding:4vh 12% 4vh 12%;
+
+    @media @phone{
+        .displayflex(column, center, center);
+        padding: 0 0 0 0;
+
+        h1{
+            text-align:center;
+            .bottomspacing();
+            padding-top: 2vh;
+        }
+    }
+   
+        nav {
+            .displayflex(row, space-between, center);
+            width:20vw;
+            
+            @media @phone{
+                .displayflex(row, space-between, center);
+                width: 90vw;
+                padding: 0 0 0 0;
+            }
+
+
+             a{
+                .navstyle();
+                font-size: 1.6rem;
+    }
+}
+}
+
